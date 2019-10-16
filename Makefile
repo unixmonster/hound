@@ -1,4 +1,4 @@
-CMDS := $(GOPATH)/bin/houndd $(GOPATH)/bin/hound
+CMDS := $(GOPATH)/bin/hounddqa $(GOPATH)/bin/houndqa
 
 SRCS := $(shell find . -type f -name '*.go')
 
@@ -14,10 +14,10 @@ ui: ui/bindata.go
 node_modules:
 	npm install
 
-$(GOPATH)/bin/houndd: ui/bindata.go $(SRCS)
-	go install github.com/unixmonster/hound/cmds/houndd
+$(GOPATH)/bin/hounddqa: ui/bindata.go $(SRCS)
+	go install github.com/unixmonster/hound/cmds/hounddqa
 
-$(GOPATH)/bin/hound: ui/bindata.go $(SRCS)
+$(GOPATH)/bin/houndqa: ui/bindata.go $(SRCS)
 	go install github.com/unixmonster/hound/cmds/hound
 
 .build/bin/go-bindata:

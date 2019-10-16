@@ -12,7 +12,7 @@ Hound is an extremely fast source code search engine. The core is based on this 
 
 ### Using Go Tools
 
-1. Use the Go tools to install Hound. The binaries `houndd` (server) and `hound` (cli) will be installed in your $GOPATH.
+1. Use the Go tools to install Hound. The binaries `hounddqa` (server) and `hound` (cli) will be installed in your $GOPATH.
 
 ```
 go get github.com/unixmonster/hound/cmds/...
@@ -20,7 +20,7 @@ go get github.com/unixmonster/hound/cmds/...
 
 2. Create a [config.json](config-example.json) in a directory with your list of repositories.
 
-3. Run the Hound server with `houndd` and you should see output similar to:
+3. Run the Hound server with `hounddqa` and you should see output similar to:
 ```
 2015/03/13 09:07:42 Searcher started for statsd
 2015/03/13 09:07:42 Searcher started for Hound
@@ -124,7 +124,7 @@ make test
 
 ### Working on the web UI
 
-Hound includes a web UI that is composed of several files (html, css, javascript, etc.). To make sure hound works seamlessly with the standard Go tools, these resources are all bundled inside of the `houndd` binary. Note that changes to the UI will result in local changes to the `ui/bindata.go` file. You must include these changes in your Pull Request.
+Hound includes a web UI that is composed of several files (html, css, javascript, etc.). To make sure hound works seamlessly with the standard Go tools, these resources are all bundled inside of the `hounddqa` binary. Note that changes to the UI will result in local changes to the `ui/bindata.go` file. You must include these changes in your Pull Request.
 
 To bundle UI changes in `ui/bindata.go` use:
 
@@ -143,7 +143,7 @@ make dev
 Then run the hound server with the --dev option:
 
 ```
-bin/houndd --dev
+bin/hounddqa --dev
 ```
 
 ## Get in Touch

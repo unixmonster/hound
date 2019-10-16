@@ -7,7 +7,7 @@ After=httpd.service
 Type=simple
 User=nobody
 Group=nobody
-ExecStart=/usr/local/hound/bin/houndd
+ExecStart=/usr/local/hound/bin/hounddqa
 Restart=always
 
 [Install]

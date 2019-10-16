@@ -18,7 +18,7 @@ $(GOPATH)/bin/hounddqa: ui/bindata.go $(SRCS)
 	go install github.com/unixmonster/hound/cmds/hounddqa
 
 $(GOPATH)/bin/houndqa: ui/bindata.go $(SRCS)
-	go install github.com/unixmonster/hound/cmds/hound
+	go install github.com/unixmonster/hound/cmds/houndqa
 
 .build/bin/go-bindata:
 	GOPATH=`pwd`/.build go get github.com/jteeuwen/go-bindata/...

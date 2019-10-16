@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-const defaultRef = "master"
+const defaultRef = "qa"
 
 func init() {
 	Register(newGit, "git")

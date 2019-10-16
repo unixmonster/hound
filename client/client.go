@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/hound-search/hound/config"
-	"github.com/hound-search/hound/index"
+	"github.com/unixmonster/hound/config"
+	"github.com/unixmonster/hound/index"
 )
 
 type Response struct {

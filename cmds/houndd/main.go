@@ -13,11 +13,11 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/hound-search/hound/api"
-	"github.com/hound-search/hound/config"
-	"github.com/hound-search/hound/searcher"
-	"github.com/hound-search/hound/ui"
-	"github.com/hound-search/hound/web"
+	"github.com/unixmonster/hound/api"
+	"github.com/unixmonster/hound/config"
+	"github.com/unixmonster/hound/searcher"
+	"github.com/unixmonster/hound/ui"
+	"github.com/unixmonster/hound/web"
 )
 
 const gracefulShutdownSignal = syscall.SIGTERM
